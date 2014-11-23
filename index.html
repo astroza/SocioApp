@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>SocioApp | UTalca - Curicó</title>
+		<meta name='viewport' content='width=device-width, minimal-ui,initial-scale=1,maximum-scale=1,user-scalable=no' />
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<script src='http://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+		<script src="http://avl.iccutal.cl/push.js"></script>
+		<link href='http://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+		<link href='http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css' rel='stylesheet'>
+		<link href='css/socio_app.css' rel='stylesheet' />
+	</head>
+	<body>
+		<div id='map'></div>
+			<div data-role="popup" id="popupPerson" data-theme="b" class="ui-corner-all">
+				<div style="padding:10px 20px;">
+				  <h3>Acerca de ti</h3>
+		          <label for="person_name" class="ui-hidden-accessible">Nombre:</label>
+		          <input type="text" name="person_name" id="person_name" value="" placeholder="Nombre" data-theme="a" />
+		          <label for="person_status" class="ui-hidden-accessible">Y tu estado:</label>
+		          <input type="text" id="person_status" value="" placeholder="Estado" data-theme="a" />
+
+		    	  <button type="button" onclick="save_person_data();" data-theme="a" data-icon="check">Guardar</button>
+				</div>
+			</div>
+		</div>
+		<script src="js/person_config.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/socio_app.js"></script>
+		<script src="js/socio_app_controls.js"></script>
+	</body>
+</html>
